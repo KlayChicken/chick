@@ -186,34 +186,34 @@ contract Chick_Mining is Ownable, ReentrancyGuard {
 
         if (cp[id] == _CHICKIZ_BASAK) {
             if (mentor[id] > 899) {
-                return _BASAK_CP.mul(minablePeriods).mul(2).div(60);
+                return _BASAK_CP.mul(minablePeriods).mul(2).div(86400);
             } else if (mentor[id] > 0) {
-                return _BASAK_CP.mul(minablePeriods).mul(6).div(5).div(60);
+                return _BASAK_CP.mul(minablePeriods).mul(6).div(5).div(86400);
             } else {
-                return _BASAK_CP.mul(minablePeriods).div(60);
+                return _BASAK_CP.mul(minablePeriods).div(86400);
             }
         } else if (cp[id] == _CHICKIZ_BBASAK) {
             if (mentor[id] > 899) {
-                return _BBASAK_CP.mul(minablePeriods).mul(2).div(60);
+                return _BBASAK_CP.mul(minablePeriods).mul(2).div(86400);
             } else if (mentor[id] > 0) {
-                return _BBASAK_CP.mul(minablePeriods).mul(6).div(5).div(60);
+                return _BBASAK_CP.mul(minablePeriods).mul(6).div(5).div(86400);
             } else {
-                return _BBASAK_CP.mul(minablePeriods).div(60);
+                return _BBASAK_CP.mul(minablePeriods).div(86400);
             }
         } else if (cp[id] == _CHICKIZ_BBBASAK) {
             if (mentor[id] > 899) {
-                return _BBBASAK_CP.mul(minablePeriods).mul(2).div(60);
+                return _BBBASAK_CP.mul(minablePeriods).mul(2).div(86400);
             } else if (mentor[id] > 0) {
-                return _BBBASAK_CP.mul(minablePeriods).mul(6).div(5).div(60);
+                return _BBBASAK_CP.mul(minablePeriods).mul(6).div(5).div(86400);
             } else {
-                return _BBBASAK_CP.mul(minablePeriods).div(60);
+                return _BBBASAK_CP.mul(minablePeriods).div(86400);
             }
         } else if (cp[id] == _CHICKIZ_BASAK_SUPER) {
-            return _BASAK_SUPER_CP.mul(minablePeriods).div(60);
+            return _BASAK_SUPER_CP.mul(minablePeriods).div(86400);
         } else if (cp[id] == _CHICKIZ_BBASAK_SUPER) {
-            return _BBASAK_SUPER_CP.mul(minablePeriods).div(60);
+            return _BBASAK_SUPER_CP.mul(minablePeriods).div(86400);
         } else if (cp[id] == _CHICKIZ_BBBASAK_SUPER) {
-            return _BBBASAK_SUPER_CP.mul(minablePeriods).div(60);
+            return _BBBASAK_SUPER_CP.mul(minablePeriods).div(86400);
         }
     }
 
